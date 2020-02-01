@@ -14,11 +14,15 @@ var (
 
 func StartApplication() {
 
-	session, err := cassandra.GetSession()
-	if err != nil {
-		panic(err)
-	}
-	session.Close()
+	// #1. it runs fine
+	cassandra.GetSession()
+
+	// #1. Got Error after downgrade Go@1.12.x from Go@1.13.x
+	//session, err := cassandra.GetSession()
+	//if err != nil {
+	//	panic(err)
+	//}
+	//session.Close()
 
 	atHandler := http.NewHandler(access_token.NewService(db.NewRepository()))
 	router.GET("/oauth/access_token/:access_token_id", atHandler.GetById)
