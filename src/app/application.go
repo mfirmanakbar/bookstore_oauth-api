@@ -2,10 +2,10 @@ package app
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/mfirmanakbar/bookstore_oauth-api/src/clients/cassandra"
-	"github.com/mfirmanakbar/bookstore_oauth-api/src/domain/access_token"
 	"github.com/mfirmanakbar/bookstore_oauth-api/src/http"
 	"github.com/mfirmanakbar/bookstore_oauth-api/src/repository/db"
+	"github.com/mfirmanakbar/bookstore_oauth-api/src/repository/rest"
+	"github.com/mfirmanakbar/bookstore_oauth-api/src/services/access_token"
 )
 
 var (
@@ -13,20 +13,9 @@ var (
 )
 
 func StartApplication() {
-
-	// #1. it runs fine
-	cassandra.GetSession()
-
-	// #1. Got Error after downgrade Go@1.12.x from Go@1.13.x
-	//session, err := cassandra.GetSession()
-	//if err != nil {
-	//	panic(err)
-	//}
-	//session.Close()
-
-	atHandler := http.NewHandler(access_token.NewService(db.NewRepository()))
+	atHandler := http.NewAccessTokenHandler(access_token.NewService(rest.NewRestUsersRepository(), db.NewRepository()))
 	router.GET("/oauth/access_token/:access_token_id", atHandler.GetById)
 	router.POST("/oauth/access_token", atHandler.Create)
 
-	router.Run(":8282")
+	router.Run(":8183")
 }
