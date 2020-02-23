@@ -43,11 +43,11 @@
 
 [[constraint]]
   name = "github.com/mfirmanakbar/bookstore_utils-go"
-  version = "1.1"
+  version = "1.1.0"
 
 [[constraint]]
   name = "github.com/stretchr/testify"
-  version = "1.4.0"
+  version = "1.5.1"
 
 [prune]
   go-tests = true
