@@ -51,7 +51,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:3023bf0d7f84a03b91049c0969acf5ed30f5009935257a24b281e5dc0ad06a52"
+  digest = "1:9b31b8b3a3597350f01e8ccb304c0f86150a8d80312c9b9786d2d011af1a80e0"
   name = "github.com/gocql/gocql"
   packages = [
     ".",
@@ -60,7 +60,7 @@
     "internal/streams",
   ]
   pruneopts = "UT"
-  revision = "81b8263d9fe526782a588ef94d3fa5c6148e5d67"
+  revision = "372a19b1a852e634680fd27feec516984c681d1d"
 
 [[projects]]
   digest = "1:d1e35b720b5f5156502ffdd174000c81295919293735342da78582e4dc7a8bcd"
@@ -124,15 +124,15 @@
   name = "github.com/mfirmanakbar/bookstore_users-api"
   packages = ["utils/crypto_utils"]
   pruneopts = "UT"
-  revision = "83a7d322a356244a5fd79a0b79143171be1849e2"
+  revision = "77b11434a466953f911f9c08376c044930ed8321"
 
 [[projects]]
-  branch = "master"
-  digest = "1:74ecc59dd8641a82e8fca670b13281ecc3978fe03ae75478a75e33bbe11e2940"
+  digest = "1:aee8c2e5f3613a74519532a9a94600d70528b020e618b11f84dd034c0ee5f370"
   name = "github.com/mfirmanakbar/bookstore_utils-go"
   packages = ["rest_errors"]
   pruneopts = "UT"
-  revision = "e48bd3a5db0be12f4ae8499acefc6276ddfea617"
+  revision = "4545d5691030d180fa8c2553a1283ba57ae9f23c"
+  version = "v1.1"
 
 [[projects]]
   digest = "1:33422d238f147d247752996a26574ac48dcf472976eda7f5134015f06bf16563"
@@ -159,12 +159,12 @@
   version = "v1.0.0"
 
 [[projects]]
-  digest = "1:8548c309c65a85933a625be5e7d52b6ac927ca30c56869fae58123b8a77a75e1"
+  digest = "1:5e8f46b412421d2d6cceea845d28ac46f3f5a5f60a6e86f0ee75e24fd43a02a9"
   name = "github.com/stretchr/testify"
   packages = ["assert"]
   pruneopts = "UT"
-  revision = "221dbe5ed46703ee255b1da0dec05086f5035f62"
-  version = "v1.4.0"
+  revision = "3ebf1ddaeb260c4b1ae502a01c7844fa8c1fa0e9"
+  version = "v1.5.1"
 
 [[projects]]
   digest = "1:5a1cf4e370bc86137b58da2ae065e76526d32b11f62a7665f36dbd5f41fa95ff"
@@ -176,11 +176,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:21170ea1a15ba3b4e49dd934e130f4e21edf3c117e24f07502fe46e45ff3a8fc"
+  digest = "1:f4caa38f81f81dc7832d923b152eddd743c2f088ef0269bcd6cba53ce5851485"
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "UT"
-  revision = "12a6c2dcc1e4cb348b57847c73987099e261714b"
+  revision = "cb0a6d8edb6c3528b01a0be84a5fe513dbf880a6"
 
 [[projects]]
   digest = "1:0e49ce3bb641491517ba5035619be50aa07619814665c9761d0decb48f35ea94"
