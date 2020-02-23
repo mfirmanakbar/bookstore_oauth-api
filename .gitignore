@@ -34,3 +34,4 @@ out/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
+/src/vendor/
